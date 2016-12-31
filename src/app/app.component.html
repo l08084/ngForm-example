@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <div class="form-box">
+    <input type="text" class="form-control" name="text1" ngModel>
+    <input type="text" class="form-control" name="text2" ngModel>
+    <input type="text" class="form-control" name="text3" ngModel>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>

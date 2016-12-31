@@ -1,8 +1,8 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
   <div class="form-box">
-    <input type="text" class="form-control" name="text1" ngModel>
-    <input type="text" class="form-control" name="text2" ngModel>
-    <input type="text" class="form-control" name="text3" ngModel>
+    <input-text name="text1" [(ngModel)]="text1" ngDefaultControl></input-text>
+    <input-text name="text2" [(ngModel)]="text2" ngDefaultControl></input-text>
+    <input-text name="text3" [(ngModel)]="text3" ngDefaultControl></input-text>
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>
